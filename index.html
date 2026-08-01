@@ -27,29 +27,32 @@
     .box {
       width: 100%;
       max-width: 760px;
-      padding: 54px 40px 48px;
+      padding: 48px 40px 46px;
       border: 1px solid #d6a64b;
       border-radius: 24px;
-      background: rgba(4, 21, 45, 0.55);
+      background: #061a35;
       box-shadow: 0 18px 55px rgba(0, 0, 0, 0.22);
     }
 
     .logo-video {
-  width: 100%;
-  max-width: 420px;
-  margin: 0 auto 30px;
-  overflow: hidden;
-  border-radius: 12px;
-  background: #061a35;
-}
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto 32px;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #061a35;
+    }
 
-.logo-video video {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  object-fit: contain;
-}
+    .logo-video video {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1024 / 950;
+      object-fit: contain;
+      margin: 0;
+      border: 0;
+      background: #061a35;
+    }
 
     h1 {
       margin: 0 0 18px;
@@ -128,12 +131,17 @@
       }
 
       .box {
-        padding: 40px 22px 36px;
+        padding: 34px 22px 34px;
         border-radius: 18px;
       }
 
-      .logo img {
-        max-width: 280px;
+      .logo-video {
+        max-width: 330px;
+        margin-bottom: 26px;
+      }
+
+      h1 {
+        font-size: 29px;
       }
 
       .intro {
@@ -144,13 +152,17 @@
         font-size: 17px;
       }
 
+      .inquiry-en {
+        font-size: 13px;
+      }
+
       .contact p {
         font-size: 15px;
       }
 
       .contact-label {
-        min-width: auto;
         display: block;
+        min-width: auto;
         margin-bottom: 2px;
       }
     }
@@ -162,10 +174,11 @@
   <main class="box">
 
     <div class="logo-video">
-  <video autoplay muted loop playsinline>
-    <source src="gangnamkstore-logo.mp4" type="video/mp4">
-  </video>
-</div>
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="gangnamkstore-logo.mp4" type="video/mp4">
+        동영상을 재생할 수 없는 브라우저입니다.
+      </video>
+    </div>
 
     <h1>홈페이지 리뉴얼 중입니다</h1>
 
