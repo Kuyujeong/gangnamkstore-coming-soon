@@ -3,93 +3,202 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>GANGNAM K STORE | 홈페이지 리뉴얼 중</title>
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
       min-height: 100vh;
+      padding: 32px 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 24px;
       background: #061a35;
-      color: #fff;
+      color: #ffffff;
       font-family: Arial, "Noto Sans KR", sans-serif;
       text-align: center;
     }
 
     .box {
       width: 100%;
-      max-width: 720px;
-      padding: 60px 30px;
+      max-width: 760px;
+      padding: 54px 40px 48px;
       border: 1px solid #d6a64b;
       border-radius: 24px;
+      background: rgba(4, 21, 45, 0.55);
+      box-shadow: 0 18px 55px rgba(0, 0, 0, 0.22);
+    }
+
+    .logo {
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    .logo img {
+      display: block;
+      width: 100%;
+      max-width: 340px;
+      height: auto;
+      margin: 0 auto;
     }
 
     h1 {
-      margin: 0 0 16px;
+      margin: 0 0 18px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.35;
+      color: #ffffff;
+      letter-spacing: -1px;
+    }
+
+    .intro {
+      margin: 0 0 34px;
+      color: #e4e9f0;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .divider {
+      width: 58px;
+      height: 1px;
+      margin: 0 auto 30px;
+      background: #d6a64b;
+    }
+
+    .inquiry-title {
+      margin: 0 0 9px;
       color: #d6a64b;
-      font-size: clamp(36px, 7vw, 64px);
-      letter-spacing: 3px;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.55;
     }
 
-    h2 {
+    .inquiry-en {
       margin: 0 0 28px;
-      font-size: clamp(22px, 4vw, 34px);
+      color: #cbd3de;
+      font-size: 14px;
+      line-height: 1.6;
     }
 
-    p {
-      margin: 10px 0;
-      line-height: 1.7;
-      color: #e7e7e7;
+    .contact {
+      margin-top: 12px;
+    }
+
+    .contact p {
+      margin: 12px 0;
+      color: #ffffff;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .contact-label {
+      display: inline-block;
+      min-width: 65px;
+      color: #d6a64b;
+      font-weight: 700;
     }
 
     a {
-      color: #d6a64b;
+      color: #ffffff;
       text-decoration: none;
     }
-    .business-icons {
-  margin: 28px auto;
-  text-align: center;
-}
 
-.business-icons img {
-  width: 100%;
-  max-width: 330px;
-  height: auto;
-  background: white;
-  border-radius: 8px;
-}
-    .logo {
-  margin: 0 auto 24px;
-  text-align: center;
-}
+    a:hover {
+      color: #d6a64b;
+    }
 
-.logo img {
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+    .footer {
+      margin-top: 36px;
+      color: #8795a8;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 18px;
+      }
+
+      .box {
+        padding: 40px 22px 36px;
+        border-radius: 18px;
+      }
+
+      .logo img {
+        max-width: 280px;
+      }
+
+      .intro {
+        font-size: 15px;
+      }
+
+      .inquiry-title {
+        font-size: 17px;
+      }
+
+      .contact p {
+        font-size: 15px;
+      }
+
+      .contact-label {
+        min-width: auto;
+        display: block;
+        margin-bottom: 2px;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <main class="box">
+
     <div class="logo">
-  <img src="gangnamkstore-logo.png" alt="GANGNAM K STORE">
-</div>
-    <h2>홈페이지 리뉴얼 중입니다</h2>
-    <p>더 나은 서비스로 곧 찾아뵙겠습니다.</p>
-    <div class="business-icons">
-  <img src="business-icons.png" alt="K-Beauty Export 및 Global Business">
-</div>
-    <p><strong>K-Beauty 유통·수출 및 비즈니스 제휴 문의</strong></p>
-    <p>K-Beauty Distribution, Export &amp; Business Partnership Inquiries</p>
-    <p>전화: <a href="tel:01082088304">010-8208-8304</a></p>
-    <p>이메일: <a href="mailto:contact@gangnamkstore.com">contact@gangnamkstore.com</a></p
+      <img src="gangnamkstore-logo.png" alt="GANGNAM K STORE 로고">
+    </div>
+
+    <h1>홈페이지 리뉴얼 중입니다</h1>
+
+    <p class="intro">
+      더 나은 서비스와 새로운 모습으로<br>
+      곧 찾아뵙겠습니다.
+    </p>
+
+    <div class="divider"></div>
+
+    <p class="inquiry-title">
+      K-Beauty 유통·수출 및 글로벌 비즈니스 제휴 문의
+    </p>
+
+    <p class="inquiry-en">
+      K-Beauty Distribution, Export &amp; Global Business Partnership
+    </p>
+
+    <div class="contact">
+
+      <p>
+        <span class="contact-label">전화</span>
+        <a href="tel:01082088304">010-8208-8304</a>
+      </p>
+
+      <p>
+        <span class="contact-label">이메일</span>
+        <a href="mailto:contact@gangnamkstore.com">
+          contact@gangnamkstore.com
+        </a>
+      </p>
+
+    </div>
+
+    <div class="footer">
+      © GANGNAM K STORE. All Rights Reserved.
+    </div>
+
   </main>
+
 </body>
 </html>
