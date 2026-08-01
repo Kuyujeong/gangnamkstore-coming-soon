@@ -36,11 +36,10 @@
 
     .logo-video {
       width: 100%;
-      max-width: 420px;
+      max-width: 460px;
       margin: 0 auto 32px;
       overflow: hidden;
-      border-radius: 12px;
-      background: #061a35;
+      background: transparent;
     }
 
     .logo-video video {
@@ -51,7 +50,8 @@
       object-fit: contain;
       margin: 0;
       border: 0;
-      background: #061a35;
+      border-radius: 0;
+      background: transparent;
     }
 
     h1 {
@@ -89,6 +89,14 @@
       color: #cbd3de;
       font-size: 14px;
       line-height: 1.6;
+    }
+
+    .desktop-text {
+      display: inline;
+    }
+
+    .mobile-text {
+      display: none;
     }
 
     .contact {
@@ -136,7 +144,7 @@
       }
 
       .logo-video {
-        max-width: 330px;
+        max-width: 100%;
         margin-bottom: 26px;
       }
 
@@ -154,6 +162,14 @@
 
       .inquiry-en {
         font-size: 13px;
+      }
+
+      .desktop-text {
+        display: none;
+      }
+
+      .mobile-text {
+        display: inline;
       }
 
       .contact p {
@@ -190,11 +206,25 @@
     <div class="divider"></div>
 
     <p class="inquiry-title">
-      K-Beauty 유통·수출 및 글로벌 비즈니스 제휴 문의
+      <span class="desktop-text">
+        K-Beauty 유통·수출 및 글로벌 비즈니스 제휴 문의
+      </span>
+
+      <span class="mobile-text">
+        K-Beauty 유통·수출 및<br>
+        글로벌 비즈니스 제휴 문의
+      </span>
     </p>
 
     <p class="inquiry-en">
-      K-Beauty Distribution, Export &amp; Global Business Partnership
+      <span class="desktop-text">
+        K-Beauty Distribution, Export &amp; Global Business Partnership
+      </span>
+
+      <span class="mobile-text">
+        K-Beauty Distribution, Export &amp;<br>
+        Global Business Partnership
+      </span>
     </p>
 
     <div class="contact">
